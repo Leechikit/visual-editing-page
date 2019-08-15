@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="47px" viewBox="0 0 42 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44 (41411) - http://www.bohemiancoding.com/sketch -->
+    <title>yiban</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-375.000000, -79.000000)">
+            <g id="yiban" transform="translate(375.000000, 79.000000)">
+                <polygon id="Path-2" fill="#0D9572" points="3.25770013 0 0.924830895 4.14224707 24.9642195 4.14224707 21.9882569 0"></polygon>
+                <polygon id="Path-29" fill="#00CE98" points="4 0 28.059163 0 41.8466491 17.2284874 41.8466491 46.5583937"></polygon>
+                <text id="已办" transform="translate(29.853175, 15.348382) rotate(-310.000000) translate(-29.853175, -15.348382) " font-family="MicrosoftYaHei, Microsoft YaHei" font-size="12" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="17.853175" y="20.3483822">已办</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

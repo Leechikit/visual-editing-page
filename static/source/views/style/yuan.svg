@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>yuan</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-339.000000, -273.000000)" fill-rule="nonzero" fill="#D6D4D4">
+            <path d="M348,290 C352.418278,290 356,286.418278 356,282 C356,277.581722 352.418278,274 348,274 C343.581722,274 340,277.581722 340,282 C340,286.418278 343.581722,290 348,290 Z M348,291 C343.029437,291 339,286.970563 339,282 C339,277.029437 343.029437,273 348,273 C352.970563,273 357,277.029437 357,282 C357,286.970563 352.970563,291 348,291 Z" id="yuan"></path>
+        </g>
+    </g>
+</svg>

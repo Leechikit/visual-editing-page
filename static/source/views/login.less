@@ -1,0 +1,119 @@
+.login{
+    width: 100%;
+    height: 100%;
+    background-image: url('https://file.iviewui.com/iview-admin/login_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    &-con{
+        // position: absolute;
+        // right: 160px;
+        // top: 50%;
+        // transform: translateY(-60%);
+        margin-right: 160px;
+        width: 330px;
+        &-header{
+            // font-size: 16px;
+            // font-weight: 300;
+            text-align: center;
+            padding: 30px 0;
+        }
+        .form-con{
+            padding: 10px 0 0;
+        }
+        .login-tip{
+            font-size: 10px;
+            text-align: center;
+            color: #c3c3c3;
+        }
+        .ivu-card-body{
+            padding: 16px 20px;
+        }
+        .ivu-card-head{
+            p{
+                font-size: 16px;
+                font-family: Microsoft YaHei;
+                font-weight: normal;
+            }
+            .ivu-icon {
+                font-size: 16px;
+                margin-right: 3px;
+            }
+            
+        }
+        .ivu-input{
+            height: 40px;
+            padding-left: 10px!important;
+            font-size: 13px;
+        }
+        .ivu-input-group-prepend{
+            padding: 8px;
+            background: #d9eafc;
+            color: #3b95eb;
+        }
+        .ivu-select-selection{
+            height: 38px;
+            .ivu-select-placeholder{
+                height: 36px;
+                line-height: 36px;
+                font-size: 13px;
+            }
+            .ivu-select-selected-value{
+                height: 36px;
+                line-height: 36px;
+            }
+        }
+        .forget-pwd{
+            margin-top: -15px;
+            .ivu-col{
+                text-align: right;
+            }
+        }
+        .footer-section{
+            background: #fcfdfd;
+            padding: 16px 0;
+            text-align: center;
+            font-size: 14px;
+        }
+        .corp-form{
+            max-height:340px;
+            overflow-y:auto;
+            margin: 10px 0 20px 0;
+            >:last-child{
+                margin-bottom: 4px;
+            }
+        }  
+    }
+    .create-succ{
+        .succ-logo{
+            background: url(~@/assets/icons/succ@2x.png) no-repeat;
+            background-size: 80px 80px;
+            margin: 0 auto;
+            width: 80px;
+            height: 80px;
+        }
+        .succ-text{
+            padding-top: 15px;
+            line-height: 1;
+            font-size: 24px;
+            text-align: center;
+        }
+        .succ-acc{
+            margin-top: 30px;
+            margin-bottom: 20px;
+            .succ-desc{
+                font-size: 16px;
+                text-align: center;
+                color: #333;
+                >span{
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: #333;
+                }
+            }
+        }
+    }
+}

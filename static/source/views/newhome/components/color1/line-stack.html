@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+   <head>
+       <meta charset="utf-8">
+   </head>
+   <body style="height: 100%; margin: 0">
+       <div id="container" style="height: 100%"></div>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-stat/ecStat.min.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/world.js"></script>
+       <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/simplex.js"></script>
+       <script type="text/javascript" src="walden.js"></script>
+       <script type="text/javascript">
+var dom = document.getElementById("container");
+var myChart = echarts.init(dom, 'walden');
+var app = {};
+option = null;
+option = {
+    title: {
+        text: '项目状态'
+    },
+    tooltip: {
+        trigger: 'axis'
+    },
+    legend: {
+        data:['进行中','即将到期','延期','延期2','延期4']
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    toolbox: {
+        feature: {
+            saveAsImage: {}
+        }
+    },
+    xAxis: {
+        type: 'category',
+        boundaryGap: false,
+        data: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月']
+    },
+    yAxis: {
+        type: 'value'
+    },
+    series: [
+        {
+            name:'进行中',
+            type:'line',
+            stack: '总量',
+            data:[120, 132, 101, 134, 90, 230, 210, 101, 134, 90, 230, 210]
+        },
+        {
+            name:'即将到期',
+            type:'line',
+            stack: '总量',
+            data:[220, 182, 191, 234, 290, 330, 310, 191, 234, 290, 330, 310]
+        },
+        {
+            name:'延期',
+            type:'line',
+            stack: '总量',
+            data:[820, 932, 901, 934, 1290, 1330, 1320, 901, 934, 1290, 1330, 1320]
+        },
+        {
+            name:'延期2',
+            type:'line',
+            stack: '总量',
+            data:[820, 932, 901, 934, 1290, 1330, 1320, 901, 934, 1290, 1330, 1320]
+        },
+        {
+            name:'延期4',
+            type:'line',
+            stack: '总量',
+            data:[820, 932, 901, 934, 1290, 1330, 1320, 901, 934, 1290, 1330, 1320]
+        },
+        {
+            name:'延期15',
+            type:'line',
+            stack: '总量',
+            data:[820, 932, 901, 934, 1290, 1330, 1320, 901, 934, 1290, 1330, 1320]
+        },
+        {
+            name:'延期12',
+            type:'line',
+            stack: '总量',
+            data:[820, 932, 901, 934, 1290, 1330, 1320, 901, 934, 1290, 1330, 1320]
+        },
+        {
+            name:'延期14',
+            type:'line',
+            stack: '总量',
+            data:[820, 932, 901, 934, 1290, 1330, 1320, 901, 934, 1290, 1330, 1320]
+        },
+
+    ]
+};
+;
+if (option && typeof option === "object") {
+    myChart.setOption(option, true);
+}
+       </script>
+   </body>
+</html>

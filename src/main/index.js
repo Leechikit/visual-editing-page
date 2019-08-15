@@ -13,6 +13,8 @@ const winURL = process.env.NODE_ENV === 'development'
   ? `http://localhost:9080`
   : `file://${__dirname}/index.html`
 
+const winTestURL = `http://localhost:9081`
+
 function createWindow () {
   /**
    * Initial window options
@@ -24,6 +26,23 @@ function createWindow () {
   })
 
   mainWindow.loadURL(winURL)
+
+  mainWindow.on('closed', () => {
+    mainWindow = null
+  })
+}
+
+function createTestWindow () {
+  /**
+   * Initial window options
+   */
+  mainWindow = new BrowserWindow({
+    height: 563,
+    useContentSize: true,
+    width: 1000
+  })
+
+  mainWindow.loadURL(winTestURL)
 
   mainWindow.on('closed', () => {
     mainWindow = null

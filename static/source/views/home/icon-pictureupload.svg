@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="67px" height="67px" viewBox="0 0 67 67" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 12</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="方案4-后台设计" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="45表单设计-按钮" transform="translate(-355.000000, -365.000000)">
+            <g id="Group-12" transform="translate(355.000000, 365.000000)">
+                <rect id="Rectangle-37-Copy-3" fill="#F3F5F9" x="0" y="0" width="66.8837944" height="67"></rect>
+                <text id="添加图片-copy" font-family=".PingFangSC-Regular, .PingFang SC" font-size="11" font-weight="normal" fill="#9F9F9F">
+                    <tspan x="12" y="56">添加图片</tspan>
+                </text>
+                <path d="M41.8655231,28.8638018 L32.8483906,28.8638018 L32.8483906,19.8651124 C32.8483906,19.3871307 32.8070927,19 32.3303449,19 C31.8533947,19 31.7892412,19.3871307 31.7892412,19.8651124 L31.7892412,28.8638018 L22.8636119,28.8638018 C22.3866414,28.8638018 22,28.9246395 22,29.4024184 C22,29.8802176 22.4137685,29.9329233 22.8907389,29.9329233 L31.7864071,29.9329233 L31.7892412,38.9008086 C31.7892412,39.3785875 31.8534149,39.7659412 32.3303449,39.7659412 C32.8070927,39.7659412 32.857298,39.3700702 32.857298,38.8922913 L32.857298,29.9329233 L41.8926299,29.9329233 C42.369985,29.9329233 42.7299043,29.8801973 42.7299043,29.4024184 C42.7299245,28.9246395 42.342858,28.8638018 41.8655231,28.8638018 Z" id="Shape" fill="#989898" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

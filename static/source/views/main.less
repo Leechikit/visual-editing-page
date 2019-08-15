@@ -1,0 +1,603 @@
+.lock-screen-back{
+    border-radius: 50%;
+    z-index: -1;
+    box-shadow: 0 0 0 0 #667aa6 inset;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 3s;
+}
+.myImg{
+    width: 100%;
+    background-size:100%100%;
+    position: relative;
+    z-index: 1235;
+}
+.matters{
+    width: 100%;
+    background-image: url(index_icon_matters.png);
+    background-size:100%100%;
+    position: relative;
+    z-index: 1000;
+}
+.todo{
+    width: 100%;
+    background-image: url(index_icon_todo.png);
+    background-size:100%100%;
+    position: relative;
+    z-index: 1000;  
+}
+.main{
+    //position: absolute;
+    background-color:white;
+    width: 100%;
+    height: 100%;
+    overflow:auto;
+    .unlock-con{
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 11000;
+    }
+    .sidebar-menu-con{
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 21;
+        transition: width .3s;
+    }
+    .layout-text{
+        display: inline-block;
+        white-space:nowrap;
+        position: absolute;
+    }
+    .main-hide-text .layout-text{
+        display: none;
+    }
+    &-content-container{
+        position: relative;
+    }
+    &-header-con{
+        box-sizing: border-box;
+        position: fixed;
+        display: block;
+        padding-left: 200px;
+        width: 100%;
+        height: 60px;
+        z-index: 20;
+        box-shadow: none;
+        transition: padding .3s;
+    }
+    &-breadcrumb{
+        padding: 8px 15px 0;
+    }
+    &-menu-left{
+        background: #464c5b;
+        height: 100%;
+    }
+    .tags-con{
+        height: 40px;
+        z-index: -1;
+        overflow: hidden;
+        background: #f0f0f0;
+        .tags-outer-scroll-con{
+            position: relative;
+            box-sizing: border-box;
+            padding-right: 120px;
+            width: 100%;
+            height: 100%;
+            .tags-inner-scroll-body{
+                position: absolute;
+                padding: 2px 10px;
+                overflow: visible;
+                white-space: nowrap;
+                transition: left .3s ease;
+            }
+            .close-all-tag-con{
+                position: absolute;
+                right: 0;
+                top: 0;
+                box-sizing: border-box;
+                padding-top: 8px;
+                text-align: center;
+                width: 110px;
+                height: 100%;
+                background: white;
+                box-shadow: -3px 0 15px 3px rgba(0, 0, 0, .1);
+                z-index: 10;
+            }
+        }
+    }
+    &-header{
+        height: 60px;
+        background: #fff;
+        box-shadow: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        z-index: 11;
+        .navicon-con{
+            margin: 6px;
+            display: inline-block;
+        }
+        .header-middle-con{
+            position: absolute;
+            left: 20px;
+            top: 0;
+            right: 340px;
+            bottom: 0;
+            padding: 10px;
+            overflow: hidden;
+        }
+        .header-middle-module{
+            position: absolute;
+            top: 0;
+            right: 300px;
+            bottom: 0;
+            padding: 10px;
+            // overflow: hidden;
+        }
+        .header-avator-con{
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 300px;
+            .switch-theme-con{
+                display: inline-block;
+                width: 40px;
+                height: 100%;
+            }
+            .message-con{
+                display: inline-block;
+                width: 30px;
+                padding: 18px 0;
+                text-align: center;
+                cursor: pointer;
+                i{
+                    vertical-align: middle;
+                }
+            }
+            .change-skin{
+                font-size: 14px;
+                font-weight: 500;
+                padding-right: 5px;
+            }
+            .switch-theme{
+                height: 100%;
+            }
+            .user-dropdown{
+                &-menu-con{
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    width: 150px;
+                    height: 100%;
+                    .main-user-name{
+                        display: inline-block;
+                        width: 80px;
+                        word-break: keep-all;
+                        white-space: nowrap;
+                        vertical-align: middle;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        text-align: right;
+                    }
+                }
+                &-innercon{
+                    height: 100%;
+                    padding-right: 14px;
+                }
+            }
+            .full-screen-btn-con{
+                display: inline-block;
+                width: 30px;
+                padding: 18px 0;
+                text-align: center;
+                cursor: pointer;
+                i{
+                    vertical-align: middle;
+                }
+            }
+            .lock-screen-btn-con{
+                display: inline-block;
+                width: 30px;
+                padding: 18px 0;
+                text-align: center;
+                cursor: pointer;
+                i{
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    .single-page-con{
+        //position: absolute;
+        // margin-top:10px;
+        top: 60px;
+        bottom: 0;
+        right: 0;
+        bottom: 0;
+        // overflow: auto;
+        background-color: #FFF;
+        z-index: 1;
+        transition: left .3s;
+        .single-page{
+            margin: 10px;
+        }
+    }
+    &-copy{
+        text-align: center;
+        padding: 10px 0 20px;
+        color: #9ea7b4;
+    }
+}
+.taglist-moving-animation-move{
+    transition: transform .3s;
+}
+.logo-con{
+    padding: 8px;
+    text-align: center;
+    img{
+        height: 44px;
+        width: auto;
+    }
+}
+
+
+// 全局弹窗
+
+/* 弹窗 */
+    .navbar {
+        background-color: transparent;
+    }
+    .ivu-modal-mask {
+        background-color: rgba(55,55,55,.4);
+    }
+
+    .ivu-modal-close {
+        position: absolute;
+        z-index: 3000;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .navbar-fixed-top, .navbar-fixed-bottom {
+        position: absolute;
+        border-bottom: none;
+        box-shadow: none;
+    }
+
+    .navbar-fixed-top {
+        top: 30px;
+    }
+
+    .sheet-navbar .container-fluid #navbar ul.navbar-nav li {
+        border-left: none;
+    }
+
+
+// 表单
+.ivu-modal-body{
+    input[type=radio]:checked+label:after {
+        margin-top: -3px;
+    }
+    .form-group {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-family: "Microsoft YaHei" !important;
+        pre {
+            font-family: "Microsoft YaHei" !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+        span {
+            line-height: 30px;
+            font-family: "Microsoft YaHei" !important;
+        }
+
+        .SheetUser-Item {
+            line-height: 20px;
+        }
+    }
+
+    .form-group.SheetQuery.editable {
+        a.form-query-addModel, a.form-query-addModel {
+            right: 0;
+            top: 3px;
+        }
+    }
+}
+
+    .ivu-modal-body {
+
+        // 流程状态标题
+        #lblWorkflowTitle {
+            width: 100%;
+            display: block;
+            background-color: #f1faff;
+            margin-bottom: 10px;
+            label {
+                font-style: normal;
+                font-weight: bold;
+                padding-left: 10px;
+            }
+        }
+        .area-item.detail {
+            padding: 10px;
+        } 
+
+        .area-item {
+            margin-bottom: 10px;
+        }
+        .SheetQuery .form-query-add:empty:not(:focus):before {
+            top: 0;
+        }
+
+        #SheetContent .SheetMultiQuery .form-query-add a.label-info>i, #SheetContent .SheetQuery .form-query-add a.label-info>i {
+            top: 6px;
+        }
+
+        .SheetQuery .form-query-add .label.label-info {
+            margin-top: 4px;
+            color: #38adff !important;
+        }
+
+        #SheetContent .row.sheet-control:not(.SheetAttachment) {
+            position: relative !important;
+
+            .description {
+                position: absolute !important;
+                top: 0;
+                margin-top: 0;
+                right: 0;
+                z-index: 2;
+            }
+        }
+        .row.form-group:not(.SheetAttachment) {
+            position: relative !important;
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+
+            .ControlTitle {
+                padding: 0;
+                display: flex;
+                align-items: center;
+
+                i {
+                    position: relative !important;
+                    top: 0 !important;
+                }
+            }
+
+            .description {
+                position: absolute !important;
+                z-index: 2 !important;
+                top: 40px !important;
+                right: 0 !important;
+                margin-top: 0 !important;
+            }
+
+        }
+
+        .SheetUser .label-info {
+            font-size: 14px !important;
+        }
+
+        .nav-tabs.user-tabs>li.active>a, .nav-tabs.user-tabs>li.active>a:focus, .nav-tabs.user-tabs>li.active>a:hover, .SheetUser .label-info {
+            color: #38adff!important;
+        }
+
+        .SheetAttachment .btn-outline {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container-fluid {
+            margin-top: 40px;
+        }
+
+        #SheetContent .page-header {
+            padding-left: 0;
+            margin-left: 0;
+            margin: 20px 0 20px;
+            font-weight: bold;
+            text-align: left !important;
+        }
+
+        .page-header strong{
+            background-color: rgb(241, 250, 255); 
+            display: block;
+            font-weight: bold;
+        }
+
+        .ivu-modal-confirm-footer {
+            display: flex;
+            justify-content: center;
+        }
+
+
+        .SheetMultiQuery .form-query-add .label.label-info {
+            color: #38adff !important;
+            margin-top: 5px;
+        }
+
+        .SheetMultiQuery .form-query-add:empty:not(:focus):before {
+            top: 2px;
+            left: 4px;
+        }
+    }
+
+.form-query-dropdown {
+    .row>input[type=checkbox]+label, .row>input[type=radio]+label {
+        line-height: 32px;
+    }
+}
+
+.ivu-message {
+    z-index: 1100;
+}
+
+
+.userpanel {
+
+    .SheetUser_tab_Deps .SheetUser-LiItem input[type=checkbox]+label {
+        margin-top: 5px;
+    }
+    .SheetUser-SelectorPanel .user-tabs {
+        padding-left: 0;
+
+        &>li a {
+            width: 80px;
+        }
+    }
+
+    .nav .SheetUser-LiItem input[type=checkbox]+label:before {
+        margin-top: -13px;
+    }
+}
+
+// 关联表单中的添加选择关联表单
+.modal-formquery {
+    .btn-group .btn-ok.btnMultiSelect {
+        margin-left: auto;
+        margin: 0 auto;
+    }
+}
+
+
+
+// 字体替换
+.form-query-addModel:before, .icon-newsvg:before {
+    content: "\F48B";
+    font-family: Ionicons;
+}
+
+.icon-xiashuguanli:before {
+    content:"\f3f1";
+    font-family: Ionicons;
+}
+
+.icon.i-download:before {
+    font-family: Ionicons !important;
+    content: "\F407";
+    font-style: normal !important;
+}
+
+.icon-Check:before {
+    font-family: Ionicons !important;
+    content: "\F121";
+
+}
+
+.ivu-icon-ios-fastforward-outline:before {
+    font-family: Ionicons;
+    content: "\F125";
+}
+
+.ivu-icon-reply:before {
+    font-family: Ionicons;
+    content: "\F21E";
+}
+
+.ivu-icon-forward:before {
+    font-family: Ionicons;
+    content: "\F13A";
+}
+
+.ivu-icon-plus:before {
+    font-family: Ionicons;
+    content: "\F216";
+}
+
+.ivu-icon-minus:before {
+    font-family: Ionicons;
+    content: "\F3A9";
+}
+
+.ivu-icon-refresh:before {
+    font-family: Ionicons;
+    content: "\F201";
+}
+
+.ivu-icon-close:before {
+    font-family: Ionicons;
+    content: "\F2D7";
+}
+
+.ivu-icon-ios-rewind-outline:before {
+    font-family: Ionicons;
+    content: "\F124";
+}
+
+// 部门人员选择，去除图标
+/* span.fa.icon-xiangyou.sheet-angel {
+    font-family: Ionicons;
+    content: "\F11F";
+} */
+.icon-xiangyou:before{
+    font-family: Ionicons;
+    content: "\f125";
+}
+.icon-xiangyoua:before{
+    font-family: Ionicons;
+    content: "\f125";
+}
+.icon-chevron-down-fill:before {
+    font-family: Ionicons;
+    content: "\f123";
+}
+
+.ivu-modal-confirm-head-title {
+    display: inline-block;
+    font-size: 20px!important;
+    color: #1c2438;
+    font-weight: 700
+}
+
+.row.expand-layout-row {
+    border: 1px solid #eee;
+    padding-top: 25px;
+    position: relative;
+    margin-top: 10px!important;
+
+    & .col-md-12.col-sm-12.col-xs-12 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    & .expand-layout-comps {
+        overflow: hidden;
+        transition: height 0.3s;
+    }
+
+    & .expand-layout-title {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        border-bottom: 1px solid #eee;
+        text-align: center;
+        padding: 3px;
+        cursor: pointer;
+        background-color: #f1faff;
+
+        & span {
+            font-weight: bold;
+
+            &:first-of-type {
+                position: absolute;
+                left: 5px;
+            }
+
+            &:last-of-type {
+                color: #007ed8;
+            }
+        }
+    }
+}

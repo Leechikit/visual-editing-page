@@ -1,0 +1,484 @@
+export default {
+    'Successful': true,
+    'ErrorMessage': null,
+    'Logined': true,
+    'ReturnData': {
+        'Functions': {
+            "时间函数":[
+                {
+                    "DisplayName":null,
+                    "Name":"NOW",
+                    "FunctionScenarioTypes":[
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        0,
+                        6
+                    ],
+                    "FunctionCategories":[
+                        2
+                    ],
+                    "Example":"NOW()",
+                    "Description":"返回当前时间，精确到时分秒，格式为yyyy-MM-dd hh:mm:ss"
+                },
+                {
+                    "DisplayName":null,
+                    "Name":"DATE",
+                    "FunctionScenarioTypes":[
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        0,
+                        6
+                    ],
+                    "FunctionCategories":[
+                        2
+                    ],
+                    "Example":"Date(\"year-month-day\")",
+                    "Description":"返回格式化的日期，格式为:yyyy-MM-dd"
+                }
+            ],
+            '逻辑函数': [{
+                'DisplayName': null,
+                'Name': 'AND',
+                'FunctionScenarioTypes': [],
+                'FunctionCategories': [],
+                'Example': '表达式1 AND 表达式2',
+                'Description': '多个用AND连接的表达式,当所有表达式均为true时，表达式返回true，否则返回False'
+            }, {
+                'DisplayName': null,
+                'Name': 'OR',
+                'FunctionScenarioTypes': [],
+                'FunctionCategories': [],
+                'Example': '表达式1 OR 表达式2',
+                'Description': '多个用OR连接的表达式，只要有一个表达式为true，表达式返回true'
+            }],
+            '高级函数': [{
+                'DisplayName': null,
+                'Name': 'DELETE',
+                'FunctionScenarioTypes': [4],
+                'FunctionCategories': [6],
+                'Example': 'DELETE(目标表单,过滤条件)',
+                'Description': '删除目标表单中符合条件的数据。目标表单可为系统中的任意表单（含子表）'
+            }, {
+                'DisplayName': null,
+                'Name': 'INSERT',
+                'FunctionScenarioTypes': [4],
+                'FunctionCategories': [6],
+                'Example': 'INSERT(目标表单,目标表单.字段1,列值1,目标表单.字段2,列值2...)',
+                'Description': '向目标表单中插入数据。目标表单可为系统中的任意表单（含子表）'
+            }, {
+                'DisplayName': null,
+                'Name': 'UPDATE',
+                'FunctionScenarioTypes': [4],
+                'FunctionCategories': [6],
+                'Example': 'UPDATE(目标表单,过滤条件,目标表单.字段1,操作+/=,列值1,目标表单.字段2,列值2...)',
+                'Description': '更新目标表单中符合条件的数据。目标表单可为系统中的任意表单（含子表）'
+            }, {
+                'DisplayName': null,
+                'Name': 'UPSERT',
+                'FunctionScenarioTypes': [4],
+                'FunctionCategories': [6],
+                'Example': 'UPSERT(目标表单,过滤条件,目标表单.字段1,列值1,目标表单.字段2,列值2...)',
+                'Description': '更新或插入目标表单数据。先根据过滤条件查找目标表单中的数据，如果找到数据则进行更新，否则向表单中插入数据。目标表单可为系统中的任意表单（含子表）'
+            }]
+        }
+    }
+}
+
+// {
+//     "Successful":true,
+//     "ErrorMessage":null,
+//     "Logined":true,
+//     "ReturnData":{
+//         "Functions":{
+//             "数学函数":[
+//                 {
+//                     "DisplayName":null,
+//                     "Name":"ABS",
+//                     "FunctionScenarioTypes":[
+//                         1,
+//                         2,
+//                         3,
+//                         4,
+//                         0,
+//                         5
+//                     ],
+//                     "FunctionCategories":[
+//                         0
+//                     ],
+//                     "Example":"ABS(number)",
+//                     "Description":"返回数字number的绝对值"
+//                 },
+//                 {
+//                     "DisplayName":null,
+//                     "Name":"COS",
+//                     "FunctionScenarioTypes":[
+//                         1,
+//                         2,
+//                         3,
+//                         4,
+//                         0,
+//                         5
+//                     ],
+//                     "FunctionCategories":[
+//                         0
+//                     ],
+//                     "Example":"COS(A)",
+//                     "Description":"返回-1到1之间的余弦值，参数A为角度"
+//                 },
+//                 {
+//                     "DisplayName":null,
+//                     "Name":"INT",
+//                     "FunctionScenarioTypes":[
+//                         1,
+//                         2,
+//                         3,
+//                         4,
+//                         0,
+//                         5
+//                     ],
+//                     "FunctionCategories":[
+//                         0
+//                     ],
+//                     "Example":"INT(number)",
+//                     "Description":"将数字number向下取整为最接近的整数"
+//                 },
+//                 {
+//                     "DisplayName":null,
+//                     "Name":"MAX",
+//                     "FunctionScenarioTypes":[
+//                         1,
+//                         2,
+//                         3,
+//                         4,
+//                         0,
+//                         5
+//                     ],
+//                     "FunctionCategories":[
+//                         0
+//                     ],
+//                     "Example":"MAX(v)",
+//                     "Description":"返回参数列表中的最大值，参数v是子表的某一个数字控件"
+//                 },
+//                 {
+//                     "DisplayName":null,
+//                     "Name":"MIN",
+//                     "FunctionScenarioTypes":[
+//                         1,
+//                         2,
+//                         3,
+//                         4,
+//                         0,
+//                         5
+//                     ],
+//                     "FunctionCategories":[
+//                         0
+//                     ],
+//                     "Example":"MIN(v)",
+//                     "Description":"返回参数列表中的最小值，参数v是子表的某一个数字控件"
+//                 },
+//                 {
+//                     "DisplayName":null,
+//                     "Name":"MOD",
+//                     "FunctionScenarioTypes":[
+//                         1,
+//                         2,
+//                         3,
+//                         4,
+//                         0,
+//                         5
+//                     ],
+//                     "FunctionCategories":[
+//                         0
+//                     ],
+//                     "Example":"MOD(number,divisor)",
+//                     "Description":"返回两数相除的余数，参数number是被除数，divisor是除数"
+//                 },
+//                 {
+//                     "DisplayName":null,
+//                     "Name":"PI",
+//                     "FunctionScenarioTypes":[
+//                         1,
+//                         2,
+//                         3,
+//                         4,
+//                         0,
+//                         5
+//                     ],
+//                     "FunctionCategories":[
+//                         0
+//                     ],
+//                     "Example":"PI()",
+//                     "Description":"圆周率3.1415..."
+//                 },
+//                 {
+//                     "DisplayName":null,
+//                     "Name":"ROUND",
+//                     "FunctionScenarioTypes":[
+//                         1,
+//                         2,
+//                         3,
+//                         4,
+//                         0,
+//                         5
+//                     ],
+//                     "FunctionCategories":[
+//                         0
+//                     ],
+//                     "Example":"ROUND(number,num_digits)",
+//                     "Description":"将数字四舍五入到指定的位数，number为要处理的数字，num_digits为指定小数位数"
+//                 },
+//                 {
+//                     "DisplayName":null,
+//                     "Name":"SIN",
+//                     "FunctionScenarioTypes":[
+//                         1,
+//                         2,
+//                         3,
+//                         4,
+//                         0,
+//                         5
+//                     ],
+//                     "FunctionCategories":[
+//                         0
+//                     ],
+//                     "Example":"SIN(A)",
+//                     "Description":"返回-1到1之间的正弦值，参数A为角度"
+//                 },
+//                 {
+//                     "DisplayName":null,
+//                     "Name":"SQRT",
+//                     "FunctionScenarioTypes":[
+//                         1,
+//                         2,
+//                         3,
+//                         4,
+//                         0,
+//                         5
+//                     ],
+//                     "FunctionCategories":[
+//                         0
+//                     ],
+//                     "Example":"SQRT(number)",
+//                     "Description":"开平方，参数number为非负数"
+//                 },
+//                 {
+//                     "DisplayName":null,
+//                     "Name":"AVG",
+//                     "FunctionScenarioTypes":[
+//                         1,
+//                         2,
+//                         3,
+//                         4,
+//                         0
+//                     ],
+//                     "FunctionCategories":[
+//                         0
+//                     ],
+//                     "Example":"AVG(v)",
+//                     "Description":"返回所有参数的平均值，参数v是子表的某一个数字控件"
+//                 },
+//                 {
+//                     "DisplayName":null,
+//                     "Name":"COUNT",
+//                     "FunctionScenarioTypes":[
+//                         1,
+//                         2,
+//                         3,
+//                         4,
+//                         0
+//                     ],
+//                     "FunctionCategories":[
+//                         0
+//                     ],
+//                     "Example":"COUNT(v)",
+//                     "Description":"统计参数列表中选项值的个数，参数v是子表的某一个控件"
+//                 },
+//                 {
+//                     "DisplayName":null,
+//                     "Name":"SUM",
+//                     "FunctionScenarioTypes":[
+//                         1,
+//                         2,
+//                         3,
+//                         4,
+//                         0
+//                     ],
+//                     "FunctionCategories":[
+//                         0
+//                     ],
+//                     "Example":"SUM(v)",
+//                     "Description":"统计输入参数的数值之和，参数v是子表的某一个数字控件"
+//                 }
+//             ],
+//             "时间函数":[
+//                 {
+//                     "DisplayName":null,
+//                     "Name":"NOW",
+//                     "FunctionScenarioTypes":[
+//                         1,
+//                         2,
+//                         3,
+//                         4,
+//                         5,
+//                         0,
+//                         6
+//                     ],
+//                     "FunctionCategories":[
+//                         2
+//                     ],
+//                     "Example":"NOW()",
+//                     "Description":"返回当前时间，精确到时分秒，格式为yyyy-MM-dd hh:mm:ss"
+//                 },
+//                 {
+//                     "DisplayName":null,
+//                     "Name":"TODAY",
+//                     "FunctionScenarioTypes":[
+//                         1,
+//                         2,
+//                         3,
+//                         4,
+//                         5,
+//                         0,
+//                         6
+//                     ],
+//                     "FunctionCategories":[
+//                         2
+//                     ],
+//                     "Example":"TODAY()",
+//                     "Description":"返回今天的日期，格式为:yyyy-MM-dd"
+//                 }
+//             ],
+//             "逻辑函数":[
+//                 {
+//                     "DisplayName":null,
+//                     "Name":"IF",
+//                     "FunctionScenarioTypes":[
+//                         1,
+//                         2,
+//                         3,
+//                         4,
+//                         5,
+//                         0,
+//                         6
+//                     ],
+//                     "FunctionCategories":[
+//                         3
+//                     ],
+//                     "Example":"IF(A,B,C)",
+//                     "Description":"如果满足条件A，则返回B，否则返回C，支持多层嵌套IF函数"
+//                 }
+//             ],
+//             "高级函数":[
+//                 {
+//                     "DisplayName":null,
+//                     "Name":"DELETE",
+//                     "FunctionScenarioTypes":[
+//                         4
+//                     ],
+//                     "FunctionCategories":[
+//                         6
+//                     ],
+//                     "Example":"DELETE(目标表单,过滤条件)",
+//                     "Description":"删除目标表单中符合条件的数据。目标表单可为系统中的任意表单（含子表）"
+//                 },
+//                 {
+//                     "DisplayName":null,
+//                     "Name":"INSERT",
+//                     "FunctionScenarioTypes":[
+//                         4
+//                     ],
+//                     "FunctionCategories":[
+//                         6
+//                     ],
+//                     "Example":"INSERT(目标表单,目标表单.字段1,列值1,目标表单.字段2,列值2...)",
+//                     "Description":"向目标表单中插入数据。目标表单可为系统中的任意表单（含子表）"
+//                 },
+//                 {
+//                     "DisplayName":null,
+//                     "Name":"UPDATE",
+//                     "FunctionScenarioTypes":[
+//                         4
+//                     ],
+//                     "FunctionCategories":[
+//                         6
+//                     ],
+//                     "Example":"UPDATE(目标表单,过滤条件,目标表单.字段1,列值1,目标表单.字段2,列值2...)",
+//                     "Description":"更新目标表单中符合条件的数据。目标表单可为系统中的任意表单（含子表）"
+//                 },
+//                 {
+//                     "DisplayName":null,
+//                     "Name":"UPSERT",
+//                     "FunctionScenarioTypes":[
+//                         4
+//                     ],
+//                     "FunctionCategories":[
+//                         6
+//                     ],
+//                     "Example":"UPSERT(目标表单,过滤条件,目标表单.字段1,列值1,目标表单.字段2,列值2...)",
+//                     "Description":"更新或插入目标表单数据。先根据过滤条件查找目标表单中的数据，如果找到数据则进行更新，否则向表单中插入数据。目标表单可为系统中的任意表单（含子表）"
+//                 },
+//                 {
+//                     "DisplayName":null,
+//                     "Name":"ADDFILE",
+//                     "FunctionScenarioTypes":[
+//                         4
+//                     ],
+//                     "FunctionCategories":[
+//                         6
+//                     ],
+//                     "Example":"ADDFILE(目标表单.附件控件,true/false,当前表单.附件控件)",
+//                     "Description":"向目标表单附件控件中添加文件。true表示覆盖写入，false表示追加写入。目标表单只能为当前表单中关联表单控件对应的表单"
+//                 },
+//                 {
+//                     "DisplayName":null,
+//                     "Name":"REMOVEFILE",
+//                     "FunctionScenarioTypes":[
+//                         4
+//                     ],
+//                     "FunctionCategories":[
+//                         6
+//                     ],
+//                     "Example":"REMOVEFILE(目标表单.附件控件,[当前表单.附件控件])",
+//                     "Description":"移除目标表单附件控件中的文件。当前表单.附件控件为选填项，不填写时从目标表单附件控件中移除所有文件，填写后则从目标表单附件控件中移除指定附件控件中的文件。目标表单只能为当前表单中关联表单控件对应的表单"
+//                 }
+//             ],
+//             "其他函数":[
+//                 {
+//                     "DisplayName":null,
+//                     "Name":"ISNULL",
+//                     "FunctionScenarioTypes":[
+//                         1,
+//                         2,
+//                         3,
+//                         5,
+//                         0,
+//                         4
+//                     ],
+//                     "FunctionCategories":[
+//                         7
+//                     ],
+//                     "Example":"ISNULL(文本或控件)",
+//                     "Description":"判断是否为空，为空则返回true，不为空则返回false，可用于判断具体值或者控件"
+//                 },
+//                 {
+//                     "DisplayName":null,
+//                     "Name":"NEWGUID",
+//                     "FunctionScenarioTypes":[
+//                         4
+//                     ],
+//                     "FunctionCategories":[
+//                         7
+//                     ],
+//                     "Example":"NEWGUID()",
+//                     "Description":"创建一个Guid"
+//                 }
+//             ]
+//         }
+//     }
+// }

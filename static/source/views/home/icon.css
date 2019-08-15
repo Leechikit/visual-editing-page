@@ -1,0 +1,389 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('/Content/H3-Icon/fonts/icomoon.eot?s387pw');
+    src: url('/Content/H3-Icon/fonts/icomoon.eot?s387pw#iefix') format('embedded-opentype'), url('/Content/H3-Icon/fonts/icomoon.ttf?s387pw') format('truetype'), url('/Content/H3-Icon/fonts/icomoon.woff?s387pw') format('woff'), url('/Content/H3-Icon/fonts/icomoon.svg?s387pw#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cgfk:before {
+  content: "\d001";
+}
+.icon-cgrk:before {
+  content: "\d002";
+}
+.icon-cgsh:before {
+  content: "\d003";
+}
+.icon-cgsq:before {
+  content: "\d004";
+}
+.icon-dbtj:before {
+  content: "\d005";
+}
+.icon-dndb:before {
+  content: "\d006";
+}
+.icon-entry:before {
+  content: "\d007";
+}
+.icon-Financial_012:before {
+  content: "\d008";
+}
+.icon-Financial_018:before {
+  content: "\d009";
+}
+.icon-Financial_020:before {
+  content: "\d00a";
+}
+.icon-Financial_021:before {
+  content: "\d00b";
+}
+.icon-Financial_022:before {
+  content: "\d00c";
+}
+.icon-Financial_024:before {
+  content: "\d00d";
+}
+.icon-Financial_025:before {
+  content: "\d00e";
+}
+.icon-Financial_026:before {
+  content: "\d00f";
+}
+.icon-Financial_027:before {
+  content: "\d010";
+}
+.icon-Financial_028:before {
+  content: "\d011";
+}
+.icon-Financial_029:before {
+  content: "\d012";
+}
+.icon-Financial_030:before {
+  content: "\d013";
+}
+.icon-Financial_031:before {
+  content: "\d014";
+}
+.icon-Financial_032:before {
+  content: "\d015";
+}
+.icon-Financial_033:before {
+  content: "\d016";
+}
+.icon-Financial_034:before {
+  content: "\d017";
+}
+.icon-gys:before {
+  content: "\d018";
+}
+.icon-gzd:before {
+  content: "\d019";
+}
+.icon-hmc:before {
+  content: "\d01a";
+}
+.icon-hr_dynamic:before {
+  content: "\d01b";
+}
+.icon-hr_employee_profile:before {
+  content: "\d01c";
+}
+.icon-hr_entry:before {
+  content: "\d01d";
+}
+.icon-hr_leaving:before {
+  content: "\d01e";
+}
+.icon-hr_payroll:before {
+  content: "\d01f";
+}
+.icon-hr_positive:before {
+  content: "\d020";
+}
+.icon-hr_raise:before {
+  content: "\d021";
+}
+.icon-hr_remind:before {
+  content: "\d022";
+}
+.icon-hr_statistics:before {
+  content: "\d023";
+}
+.icon-hr_transfer_position:before {
+  content: "\d024";
+}
+.icon-humanresource:before {
+  content: "\d025";
+}
+.icon-inspection:before {
+  content: "\d026";
+}
+.icon-jskccx:before {
+  content: "\d027";
+}
+.icon-kccx:before {
+  content: "\d028";
+}
+.icon-kctj:before {
+  content: "\d029";
+}
+.icon-leave:before {
+  content: "\d02a";
+}
+.icon-lyck:before {
+  content: "\d02b";
+}
+.icon-lz:before {
+  content: "\d02c";
+}
+.icon-mbsz:before {
+  content: "\d02d";
+}
+.icon-mdck:before {
+  content: "\d02e";
+}
+.icon-mdkccsh:before {
+  content: "\d02f";
+}
+.icon-mdxx:before {
+  content: "\d030";
+}
+.icon-pdtj:before {
+  content: "\d031";
+}
+.icon-Personnel_001:before {
+  content: "\d032";
+}
+.icon-Personnel_002:before {
+  content: "\d033";
+}
+.icon-Personnel_003:before {
+  content: "\d034";
+}
+.icon-Personnel_005:before {
+  content: "\d035";
+}
+.icon-Personnel_006:before {
+  content: "\d036";
+}
+.icon-Personnel_008:before {
+  content: "\d037";
+}
+.icon-Personnel_009:before {
+  content: "\d038";
+}
+.icon-Personnel_012:before {
+  content: "\d039";
+}
+.icon-Personnel_014:before {
+  content: "\d03a";
+}
+.icon-Personnel_015:before {
+  content: "\d03b";
+}
+.icon-Personnel_016:before {
+  content: "\d03c";
+}
+.icon-Personnel_017:before {
+  content: "\d03d";
+}
+.icon-Personnel_018:before {
+  content: "\d03e";
+}
+.icon-Personnel_019:before {
+  content: "\d03f";
+}
+.icon-Personnel_020:before {
+  content: "\d040";
+}
+.icon-Personnel_021:before {
+  content: "\d041";
+}
+.icon-Personnel_022:before {
+  content: "\d042";
+}
+.icon-Personnel_023:before {
+  content: "\d043";
+}
+.icon-Personnel_024:before {
+  content: "\d044";
+}
+.icon-pfcx:before {
+  content: "\d045";
+}
+.icon-pftj:before {
+  content: "\d046";
+}
+.icon-pqck:before {
+  content: "\d047";
+}
+.icon-rctx:before {
+  content: "\d048";
+}
+.icon-remaind:before {
+  content: "\d049";
+}
+.icon-rktj:before {
+  content: "\d04a";
+}
+.icon-roster:before {
+  content: "\d04b";
+}
+.icon-rz:before {
+  content: "\d04c";
+}
+.icon-Sales_001:before {
+  content: "\d04d";
+}
+.icon-Sales_008:before {
+  content: "\d04e";
+}
+.icon-Sales_009:before {
+  content: "\d04f";
+}
+.icon-Sales_010:before {
+  content: "\d050";
+}
+.icon-Sales_011:before {
+  content: "\d051";
+}
+.icon-Sales_012:before {
+  content: "\d052";
+}
+.icon-Sales_013:before {
+  content: "\d053";
+}
+.icon-Sales_014:before {
+  content: "\d054";
+}
+.icon-Sales_015:before {
+  content: "\d055";
+}
+.icon-Sales_017:before {
+  content: "\d056";
+}
+.icon-Sales_018:before {
+  content: "\d057";
+}
+.icon-Sales_019:before {
+  content: "\d058";
+}
+.icon-Sales_020:before {
+  content: "\d059";
+}
+.icon-Sales_021:before {
+  content: "\d05a";
+}
+.icon-Sales_022:before {
+  content: "\d05b";
+}
+.icon-Sales_023:before {
+  content: "\d05c";
+}
+.icon-Sales_024:before {
+  content: "\d05d";
+}
+.icon-score:before {
+  content: "\d05e";
+}
+.icon-shop_ins_template_set:before {
+  content: "\d05f";
+}
+.icon-shop_inspection_score_query:before {
+  content: "\d060";
+}
+.icon-shop_inspection_statistics:before {
+  content: "\d061";
+}
+.icon-shop_inspection_store:before {
+  content: "\d062";
+}
+.icon-source:before {
+  content: "\d063";
+}
+.icon-stock_analysis:before {
+  content: "\d064";
+}
+.icon-stock_clear_date:before {
+  content: "\d065";
+}
+.icon-stock_flow:before {
+  content: "\d066";
+}
+.icon-stock_initial-inventory:before {
+  content: "\d067";
+}
+.icon-stock_inventory:before {
+  content: "\d068";
+}
+.icon-stock_payment:before {
+  content: "\d069";
+}
+.icon-stock_purchase:before {
+  content: "\d06a";
+}
+.icon-stock_raw_material:before {
+  content: "\d06b";
+}
+.icon-stock_statistics:before {
+  content: "\d06c";
+}
+.icon-stock_storage:before {
+  content: "\d06d";
+}
+.icon-stock_supplier:before {
+  content: "\d06e";
+}
+.icon-stock_transfer:before {
+  content: "\d06f";
+}
+.icon-stock_warehouse:before {
+  content: "\d070";
+}
+.icon-storage:before {
+  content: "\d071";
+}
+.icon-tg:before {
+  content: "\d072";
+}
+.icon-tx:before {
+  content: "\d073";
+}
+.icon-wlxx:before {
+  content: "\d074";
+}
+.icon-xdbg:before {
+  content: "\d075";
+}
+.icon-xdpf:before {
+  content: "\d076";
+}
+.icon-ygda:before {
+  content: "\d077";
+}
+.icon-ygdt:before {
+  content: "\d078";
+}
+.icon-ygtj:before {
+  content: "\d079";
+}
+.icon-zz:before {
+  content: "\d07a";
+}

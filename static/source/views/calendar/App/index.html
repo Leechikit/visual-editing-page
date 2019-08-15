@@ -1,0 +1,1137 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta name="renderer" content="webkit" />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="钉钉,企业应用,云开发,流程审批,移动办公,企业协作">
+    <meta name="description" content="氚云是钉钉的轻应用构建平台，你可以在氚云上快速开发企业应用，拥有流程审批、销售管理、项目管理等多个企业应用，随时随地移动办公，让你的企业协作更高效。">
+
+    <title>氚云 - </title>
+
+
+    <link href="/bundles/layoutcss?v=1WXaThOBRQna8vJiHbWSRLsLcB70OhsF2tlsoSCvtqs1" rel="stylesheet"/>
+
+
+    
+    <link href="/bundles/AppIndexCss?v=s5cDthcJLEiM-03exXFo_VyBrhm3--3VwHdzXf2Klb41" rel="stylesheet"/>
+
+    <style>
+        .mainpanel {
+            margin-left: 230px;
+        }
+
+        .expire-bg {
+            background: #000;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.5;
+            display: none;
+        }
+    </style>
+
+</head>
+<body style="min-width: 1255px;overflow-x: auto !important;">
+    <div class="announce marquee">
+        <div id="announce-close"><span class="icon-close"></span></div>
+        <div id="announce-container">
+        </div>
+    </div>
+            <header class="navbar">
+                <div class="headerwrapper">
+                    <div class="header-left">
+
+                        <a id="headlogo" class="navbar-brand" style="min-height:52px;font-size:0px;display:block;" href="/Home/Index">
+                                    <img src="/Content/images/logo.svg" />
+                                        <span class="freeTip">免费版</span>
+
+                        </a>
+                    </div>
+                    <div class="header-right">
+                        <div class="pull-left" style=" position:relative;margin-left:-75px;height:54px;">
+                                <form class="form form-search" action="/GlobalSearch/Index" style="display:block;" target="_blank">
+                                    <input type="search" id="txtSearch_top" name="Keyword" value="" class="form-control search-input fulltext-retrieval" placeholder="搜索 功能、数据、同事......" />
+                                    <span class="head-search-btn"><i class="icon-nav_search"></i></span>
+                                </form>
+
+                        </div>
+                        <div class="pull-right" style="height: 55px;">
+                            <ul class="nav navbar navbar-nav navbar-right h3-navbar-right" style="height: 100%;"></ul>
+
+<div class="app-list" id="apps" style="width:300px;border:0;background-color:#fff;border-radius:3px;">
+    <div id="moreapps" style="height:340px;margin-top:15px; overflow:auto;">
+    </div>
+</div>
+
+<!--引擎集合-->
+<div id="optionengines">
+    <ul></ul>
+</div>
+
+<div id="help-target">
+    <ul>
+        <li>
+            <a href="https://h3yun.com/help/word.php" target="_blank">
+                <img src="/Content/images/helpicon/help-mance.svg" />
+                <P>入门手册</P>
+            </a>
+        </li>
+        <li>
+            <a href="https://h3yun.com/help/developer.php" target="_blank">
+                <img src="/Content/images/helpicon/help-developer.svg" />
+                <P>开发者手册</P>
+            </a>
+        </li>
+        <li>
+            <a href="https://h3yun.com/help/video.php" target="_blank">
+                <img src="/Content/images/helpicon/help-video.svg" />
+                <P>视频教程</P>
+            </a>
+        </li>
+        <li>
+            <a href="https://h3yun.com/help/blog.php" target="_blank">
+                <img src="/Content/images/helpicon/help-sense.svg" />
+                <P>场景实操</P>
+            </a>
+        </li>
+        <li>
+            <a href="https://h3yun.com/help/faq.php" target="_blank">
+                <img src="/Content/images/helpicon/help-problems.svg" />
+                <P>常见问题</P>
+            </a>
+        </li>
+        <li>
+            <a href="https://h3yun.com/help/log.php" target="_blank">
+                <img src="/Content/images/helpicon/help-update.svg" />
+                <P>产品更新</P>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="expire-panel" style="display:none;">
+    <div class="bg">
+    </div>
+    <div class="expireimg">
+        <div class="msg">
+            <h4 class="expiretitle">超期提醒</h4>
+            <div class="expirecontent">
+                尊敬的用户，您的<span id="DisplaySolutionType">氚云</span>服务<span id="DisplayExpireDate" style="color:#f5222d">已到期</span>, 如需继续使用请及时续费或来电咨询 <span class="n-link">查看详情>></span>
+            </div>
+            <div class="officehours">
+                客服电话：<span id="serverTel">4000-899-893</span>（周一至周五 9:00 - 12:00  13:30 - 18:00）
+            </div>
+            <div class="bt">
+                <a href="https://www.sobot.com/chat/pc_new/index.html?sysNum=ba53512829e343058872e7c2ab942a7e&color=0f92ed&lan=cn&invite=0&unreadcount=0" target="blank">
+                    立即咨询
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="n-panel expire-pan" style="display:none;">
+    <div class="n-close">
+        <span class="icon-guanbi"></span>
+    </div>
+    <div class="n-template">
+        <h4 class="n-title">
+            温馨提醒
+        </h4>
+        <div class="n-content">
+        </div>
+        <div class="n-menu consultation">
+            <a href="https://www.sobot.com/chat/pc_new/index.html?sysNum=ba53512829e343058872e7c2ab942a7e&color=0f92ed&lan=cn&invite=0&unreadcount=0" target="blank">
+                立即咨询
+            </a>
+        </div>
+    </div>
+</div>
+<script src="/Scripts/jquery-1.10.2.min.js"></script>
+<script>
+    String.prototype.visualLength = function () {
+        var ruler = $('#ruler');
+        ruler.text(this);
+        return ruler[0].offsetWidth;
+    };
+    $(function () {
+        //许可到期提醒
+        var schemaCode = GetQueryString("id");
+        var LicenseFilterActionName = { "ActionName": "LicenseFilter", "id": schemaCode };
+        $.ajax({
+            url: '/Navigation/OnAction',
+            dataType: 'JSON',
+            type: 'POST',
+            data: { PostData: JSON.stringify(LicenseFilterActionName) },
+            success: function (data) {
+                if (data.ReturnData) {
+                    ValidSolutionState(data);
+                }
+            },
+            error: function (err) {
+
+            }
+        });
+
+        var ValidSolutionState = function (data) {
+            //决招套件联系方式单独处理
+            var jzSolutionCodes = [];
+            jzSolutionCodes.push("jzerp");
+            jzSolutionCodes.push("jzcrp");
+            jzSolutionCodes.push("jzhrm");
+
+            var engineCode = data.ReturnData.LicenseEngineCode;
+            var solutionStates = data.ReturnData.LicenseSolutionStates;
+            var expireDate = data.ReturnData.LicenseExpiredDate;
+            var residueFileSize = data.ReturnData.LicenseResidueFileSize;
+            var solutionCode = data.ReturnData.LicenseSolutionCode;
+            var solutionName = data.ReturnData.LicenseSolutionName;
+            var isAdmin = data.ReturnData.LicenseIsAdministrator;
+            var solutionType = data.ReturnData.LicenseSolutionType;
+
+            var isJZSolution = $.inArray(solutionCode.toLowerCase(), jzSolutionCodes) > -1;
+
+            if ($.inArray(SolutionState.Normal, solutionStates) < 0) {
+                if ($.inArray(SolutionState.Expire, solutionStates) >= 0) {
+                    if (solutionType != SolutionType.APaaS && isAdmin) {
+                        $('#DisplaySolutionType').html(solutionName);
+                        $('.n-link').hide();
+                    } else if (solutionType != SolutionType.APaaS && !isAdmin) {
+                        $('.expirecontent').addClass('textCenter').html('尊敬的用户，您的' + solutionName + '服务<span style="color:#f5222d">已到期</span>，请联系公司管理员续费！')
+                        $('.expireimg .officehours,.expireimg .bt').hide();
+                        $('.n-link').hide();
+                    } else if (solutionType == SolutionType.APaaS && !isAdmin) {
+                        $('.expirecontent').addClass('textCenter').html('尊敬的用户，您的氚云服务<span style="color:#f5222d">已到期</span>，请联系贵公司管理员续费！')
+                        $('.expireimg .officehours,.expireimg .bt').hide();
+                    }
+
+                    if (solutionType === SolutionType.SaaS && isAdmin && isJZSolution) {
+                        $('#serverTel').html('400-1399-566');
+                    }
+                    $("body").css("overflow", "hidden");
+                    $('div.expire-panel').show();
+                    $('.mainwrapper').addClass('mainwrappermask').css({ '-webkit-filter': 'blur(7px)', 'fliter': 'blur(7px)' });
+                    $('div.expire-panel').css('background-image', 'url(/Content/images/expiry_time.png)');
+                } else {
+                    var key = engineCode + "_" + solutionName + "_" + new Date().toLocaleDateString();
+                    var hasSend = window.localStorage.getItem(key) == 'true';
+                    $('.n-panel').before('<div class="willexpire-bg expire-bg"></div>');
+                    if (!hasSend) {
+                        var template = "";
+                        if ($.inArray(SolutionState.WillExpire, solutionStates) >= 0) {
+                            if (solutionType == SolutionType.Template) {
+                                return;
+                            }
+                            $('.n-panel').css('background-image', 'url(/Content/images/willexpiry_time.png)');
+                            if (solutionType == SolutionType.SaaS) {
+                                template = MessageTemplate.SaasWillExpire.content.replace('{SolutionName}', solutionName).replace('{ExpireDate}', expireDate);
+                                if (isJZSolution) {
+                                    template = MessageTemplate.SaasWillExpire.content.replace('{SolutionName}', solutionName).replace('{ExpireDate}', expireDate).replace('4000-899-893', '400-1399-566');
+                                }
+                                $('.n-link').hide();
+                            }
+                            else {
+                                template = MessageTemplate.WillExpire.content.replace('{ExpireDate}', expireDate);
+                            }
+                            //普通用户即将到期不提醒
+                            if (isAdmin) {
+                                $('.n-panel, .expire-bg').show();
+                                $('.mainwrapper').addClass('mainwrappermask').css({ '-webkit-filter': 'blur(7px)', 'fliter': 'blur(7px)' });
+                            }
+                        }
+                        else if ($.inArray(SolutionState.FileSizeExceed, solutionStates) >= 0 && solutionType === SolutionType.APaaS) {
+                            if (isAdmin) {
+                                template = MessageTemplate.FileSizeExceed.content;
+                            } else {
+                                return;
+                            }
+
+                            $('.n-panel').css('background-image', 'url(/Content/images/runout_file.png)');
+                            $('.n-panel').find('h4').text('限制提醒');
+                            $('.n-panel, .expire-bg').show();
+                            $('.mainwrapper').addClass('mainwrappermask').css({ '-webkit-filter': 'blur(7px)', 'fliter': 'blur(7px)' });
+                        }
+                        else if ($.inArray(SolutionState.FileSizeWillExceed, solutionStates) >= 0 && solutionType === SolutionType.APaaS) {
+                            if (isAdmin) {
+                                $('.n-panel').css('background-image', 'url(/Content/images/willrunout_file.png)');
+                                template = MessageTemplate.FileSizeWillExceed.content.replace('{residueFileSize}', residueFileSize);
+                                $('.n-panel, .expire-bg').show();
+                                $('.mainwrapper').addClass('mainwrappermask').css({ '-webkit-filter': 'blur(7px)', 'fliter': 'blur(7px)' });
+                            }
+                            else {
+                                return;
+                            }
+                        }
+
+                        $('.n-panel').find('.n-content').html(template);
+                        $('.n-panel').find('span.n-link').on('click', function () {
+                            window.open('https://h3yun.com/index.php?g=Chuanyun&m=Product&a=index');
+                        });
+
+                        $('.n-panel').find('div.n-close').on('click', function () {
+                            $('.n-panel, .expire-bg').hide();
+                            $('.mainwrapper').removeClass('mainwrappermask').css({ '-webkit-filter': 'blur(0px)', 'fliter': 'blur(0px)' });
+                        });
+                        $('.n-panel').find('div.n-menu').children('input').on('click', function () {
+                            $('.n-panel, .expire-bg').hide();
+                            $('.mainwrapper').removeClass('mainwrappermask').css({ '-webkit-filter': 'blur(0px)', 'fliter': 'blur(0px)' });
+                        });
+                        window.localStorage.setItem(key, 'true');
+                    }
+                }
+            }
+        };
+        $('.expireimg').find('span.n-link').on('click', function () {
+                            window.open('https://h3yun.com/index.php?g=Chuanyun&m=Product&a=index');
+                        });
+        var actionName = "GetHeaderMenusInfo";
+        var nodeCode = GetQueryString("id");
+        var dividerHtml = "<li role=\"separator\" class=\"divider-vertical\"></li>";
+        var pageData = {
+            Apps: [],
+            CurentModule: "",
+            TodoNum: 0,
+            MoreApps: [],
+            IsAPaaS: false,
+            HelpService: "",
+            IsAdminAndDeveloper: false,
+            OnlineService: "",
+            ProfilePhotoUrl: "",
+            Name: "",
+            ShowInstallMoreApp: false
+        };
+        var RenderAppsHtml = function () {
+            var apphtml = "";
+            if (pageData.IsAdminAndDeveloper && pageData.Apps.length > 1) {
+                var _apps = [].concat(pageData.Apps);
+                //pageData.Apps = _apps.slice(0,2);
+                //pageData.MoreApps = _apps.slice(2).concat(pageData.MoreApps);
+            }
+            if (pageData.Apps && pageData.Apps.length > 0) {
+                for (var i = 0, len = pageData.Apps.length; i < len; i++) {
+                    var app = pageData.Apps[i];
+
+                    if (app.appCode === pageData.CurentModule) {
+                        apphtml += "<li class=\"active\" data-code=\"" + app.appCode + "\" data-href=\"" + app.href + "\">";
+                        apphtml += "<span class=\"title  app\"><span>" + app.displayName + "</span></span>";
+                        apphtml += "<span class=\"badge\" id=\"task-num\"></span>";
+                        apphtml += "</li>";
+                    } else {
+                        apphtml += "<li data-code='" + app.appCode + "' data-href='" + app.href + "'>";
+                        apphtml += "<span class='title app'><span>" + app.displayName + "</span></span>";
+                        apphtml += "<span class=\"badge\" id=\"task-num\"></span>";
+                        apphtml += "</li>";
+                    }
+                }
+
+            }
+            return apphtml;
+        }
+        var RenderMoreAppsHtml = function () {
+            var moreAppsHtml = "";
+            var curAppCode = pageData.CurentModule;
+            if (pageData.MoreApps && pageData.MoreApps.length > 0 && curAppCode) {
+                var isMoreApp = true;
+                for (var i = 0, len = pageData.Apps.length; i < len; i++) {
+                    if (curAppCode == pageData.Apps[i].appCode) {
+                        isMoreApp = false;
+                        break;
+                    }
+                }
+                if (isMoreApp) {
+                    for (var j = 0, length = pageData.MoreApps.length; j < length; j++) {
+                        if (curAppCode === pageData.MoreApps[j].appCode) {
+                            moreAppsHtml += " <li class=\"active app-trigger\" rel=\"apps\" style=\"margin-right:0;padding-right:0;\">";
+                            moreAppsHtml += " <span class=\"title\"><span>" + pageData.MoreApps[j].displayName + "</span></span>";
+                            moreAppsHtml += "</li><li style=\"margin-left:0;padding-left:0;\" class=\"app-trigger\"  rel=\"apps\">";
+                            moreAppsHtml += "<i class=\"icon-function-list\"></i>";
+                            moreAppsHtml += "</li>";
+
+                            break;
+                        }
+                    }
+                }
+                else {
+                    moreAppsHtml += "<li class=\"app-trigger\" rel=\"apps\" style=\"margin-right:0;padding-right:0;\"><span>更多应用</span></li><li class=\"app-trigger\"  rel=\"apps\" style=\"margin-left:0;padding-left:0;\"><i class=\"icon-function-list \"></i></li>";
+                }
+            }
+            else {
+                moreAppsHtml += "<li class=\"app-trigger\" rel=\"apps\" style=\"margin-right:0;padding-right:0;\"><span>更多应用</span><li class=\"app-trigger\"  rel=\"apps\" style=\"margin-left:0;padding-left:0;\"><i class=\"icon-function-list \"></i></li>";
+            }
+            return moreAppsHtml;
+        }
+        var RenderProfilePhotoUrl = function () {
+            var photoUrlHtml = "<li id=\"engine-trigger\" rel=\"optionengines\" style=\"margin- left:0;\">";
+            if (pageData.ProfilePhotoUrl) {
+                var profilePhotoUrl = pageData.ProfilePhotoUrl;
+                if (profilePhotoUrl.indexOf("https") < 0) {
+                    profilePhotoUrl = profilePhotoUrl.replace("http", "https");
+                }
+                photoUrlHtml += "<div class=\"user-avatar\">";
+                photoUrlHtml += "<img src=\"" + profilePhotoUrl + "\" class=\"media-object img-circle\" style=\"width:30px;height:30px;margin-top:12px;\" />";
+                photoUrlHtml += "</div>";
+            }
+            else {
+                var name = pageData.Name ? pageData.Name : "";
+                if (name.length > 2) {
+                    name = name.substr(name.length - 2, 2);
+                }
+                photoUrlHtml += " <div class=\"user-info\">" + name + "</div>";
+            }
+            photoUrlHtml += " </li>";
+            return photoUrlHtml;
+        }
+        var RenderNavbarRight = function () {
+            var navbarRight = "";
+
+            var apphtml = RenderAppsHtml();
+            var moreapphtml = RenderMoreAppsHtml();
+            navbarRight += apphtml;
+            navbarRight += moreapphtml;
+            if (pageData.IsAPaaS && pageData.IsAdminAndDeveloper) {
+                navbarRight += dividerHtml;
+                navbarRight += " <li id=\"setting- trigger\" class=\"top- trigger enter-market\"  style=\"padding- left:0; margin - left:0; \">";
+                navbarRight += "<span> 模板中心</span></li>";
+            }
+            if (pageData.IsAdminAndDeveloper) {
+                navbarRight += dividerHtml;
+                navbarRight += " <li id=\"setting- trigger\"  class=\"top- trigger tp\" rel=\"syssetting\" style=\"padding- left:0; margin - left:0; \">";
+                navbarRight += "<span onclick=\"ToConsole();\" > 应用工场</span></li>";
+            }
+            navbarRight += dividerHtml;
+            var triggerHelpRef = "";
+            var sassHelpClass = "";
+            if (pageData.IsAPaaS) {
+                triggerHelpRef = "help-target";
+            }
+            else {
+                sassHelpClass = "sass-help";
+            }
+
+            // 迭代11 Swork组添加，消息提醒页面
+            var activeInMessagePage = $("#my-message-frame").length > 0 ? "class=\"active\"" : "";
+            navbarRight += ("<li style=\"padding-top: 19px;\" id=\"my-message-link-container\"" + activeInMessagePage + ">");
+            navbarRight += "<a id=\"my-message-link\" class=\"contact-service\" href=\"/FormTaskTips/MyMessage\" target=\"_self\"><img style=\"width:16px;height:16px;\" src=\"/Content/images/svg/icon-bells.svg\" /></a></li>";
+            navbarRight += dividerHtml;
+
+            if (pageData.IsAdminAndDeveloper) {
+                navbarRight += "<li id=\"help-trigger\" class=\"top-trigger " + sassHelpClass + "\" rel=\"" + triggerHelpRef + "\"><img style=\"width:16px;height:16px;\" src=\"/Content/images/svg/question-circle-o.svg\" /></li>";
+                navbarRight += dividerHtml;
+                navbarRight += "<li style=\"padding-top: 19px;\">";
+                navbarRight += "<a class=\"contact-service\" href=\"" + pageData.OnlineService + "\" target=\"_blank\"><img style=\"width:16px;height:16px;\" src=\"/Content/images/helpicon/service-icon.svg\" /></a></li>";
+                navbarRight += dividerHtml;
+            }
+
+            var photoUrlHtml = RenderProfilePhotoUrl();
+            navbarRight += photoUrlHtml;
+            var navbarRightDom = $(".h3-navbar-right");
+            navbarRightDom.append(navbarRight);
+            // 此处处理长度超过80的标题
+            navbarRightDom.find('span.app').each(function () {
+                var text = $(this).text();
+                if (text.visualLength() > 80) {
+                    $(this).tooltip({
+                        placement: 'bottom',
+                        title: text
+                    });
+                }
+            });
+
+            //var key = 'tp_setting';
+            // 迭代9取消掉设置改名应用工场提示
+            //if (!localStorage.getItem(key)) {
+            //    var html = '<div class="setting-tip-content" style="text-align:center;"><span>[设置]更名</span><span>[应用工场]</span><span>&nbsp;&nbsp;&nbsp;<i class="icon icon-close2"></i><span></div>';
+            //    navbarRightDom.find('.tp').each(function () {
+            //        $(this).popover({
+            //            placement: 'bottom',
+            //            //title: '设置改名应用工场', // 可以是html结构
+            //            html: true,
+            //            trigger: 'click',
+            //            content: html,
+            //        });
+            //    });
+            //    navbarRightDom.find('.tp').click();
+            //    navbarRightDom.find('.setting-tip-content').click(function () {
+            //        navbarRightDom.find('.tp').popover('hide');
+            //        localStorage.setItem(key, true);
+            //    });
+            //}
+            var float_Params = {
+                eventType: 'hover',
+                hoverHold: true,
+                showDelay: 200,
+                position: '7-5',
+                reverseSharp: true,
+                width: 300,
+                offsets: {
+                    x: -70,
+                    y: -10
+                }
+            };
+
+            if (pageData && pageData.IsAdminAndDeveloper) {
+                float_Params.offsets.x = 0;
+            }
+            $('#app-trigger').powerFloat(
+                float_Params
+            );
+            $('.app-trigger').powerFloat(
+                float_Params
+            );
+        }
+        var RenderAppList = function () {
+            var colors = ["box-a", "box-b", "box-c", "box-d", "box-e", "box-f"];
+            var apps = pageData.MoreApps;
+            var tableHtml = "";
+            if (apps && apps.length > 0) {
+                tableHtml += "<table style=\"width:100%;\">";
+                var rows = parseInt(apps.length / 3);
+                var mod = apps.length % 3;
+                var activeCode = pageData.CurentModule;
+                for (var i = 0; i < rows; i++) {
+                    tableHtml += "<tr><td>";
+                    tableHtml += "<div class=\"box-item\" data-code=\"" + apps[i * 3].appCode + "\" data-href=\"" + apps[i * 3].href + "\" data-active=\"" + apps[i * 3].active + "\">";
+                    tableHtml += "<div class=\"box-item-logo \"><span class=\"" + apps[i * 3].icon + " " + colors[(i * 3) % 6] + "\"></span></div>";
+                    tableHtml += "<div class=\"box-item-text\"><span>" + $.htmlEncode(apps[i * 3].displayName) + "</span></div>";
+                    tableHtml += "</div></td><td>";
+                    tableHtml += "<div class=\"box-item\" data-code=\"" + apps[i * 3 + 1].appCode + "\" data-href=\"" + apps[i * 3 + 1].href + "\" data-active=\"" + apps[i * 3 + 1].active + "\">";
+                    tableHtml += "<div class=\"box-item-logo \"> <span class=\"" + apps[i * 3 + 1].icon + " " + colors[(i * 3 + 1) % 6] + "\"></span></div>";
+                    tableHtml += "<div class=\"box-item-text\"><span>" + $.htmlEncode(apps[i * 3 + 1].displayName) + "</span></div>";
+                    tableHtml += "</div></td><td>";
+                    tableHtml += "<div class=\"box-item\" data-code=\"" + apps[i * 3 + 2].appCode + "\" data-href=\"" + apps[i * 3 + 2].href + "\" data-active=\"" + apps[i * 3 + 2].active + "\">";
+                    tableHtml += "<div class=\"box-item-logo \"><span class=\"" + apps[i * 3 + 2].icon + " " + colors[(i * 3 + 2) % 6] + "\"></span></div>";
+                    tableHtml += "<div class=\"box-item-text\"><span>" + $.htmlEncode(apps[i * 3 + 2].displayName) + "</span></div>";
+                    tableHtml += "</div></td></tr>";
+                }
+                tableHtml += "<tr>";
+                for (var i = 0; i < mod; i++) {
+                    var app = apps[rows * 3 + i];
+                    tableHtml += "<td>";
+                    tableHtml += "<div class=\"box-item\" data-code=\"" + app.appCode + "\" data-href=\"" + app.href + "\" data-active=\"" + app.active + "\">";
+                    tableHtml += "<div class=\"box-item-logo \"><span class=\"" + app.icon + " " + colors[i] + "\"></span></div>";
+                    tableHtml += "<div class=\"box-item-text\"><span>" + $.htmlEncode(app.displayName) + "</span></div>";
+                    tableHtml += " </div></td>";
+                }
+                tableHtml += "</tr></table>";
+            }
+            else {
+                tableHtml += "<div class=\"no-data\"></div>";
+            }
+            $("#moreapps").append(tableHtml);
+        }
+        var RenderEngine = function () {
+            var optionEngines = pageData.OptionalEngines;
+            var engineHtml = "";
+            if (optionEngines) {
+                $.each(optionEngines, function (key, value) {
+                    if (key == pageData.EngineCode) {
+                        var cls = "";
+                        if (Object.keys(optionEngines).length == 1) {
+                            cls = "onlyOneEngine";
+                        }
+                        engineHtml += "<li data-code=\"" + key + "\" style=\"color:#37abfd;\" class=\"" + cls + "\">" + $.htmlEncode(value) + "</li>";
+                        engineHtml += "<li class=\"divider\" style=\"height: 10px;border-top: 1px solid #EDEDED;\"></li>";
+                    }
+                    else {
+                        engineHtml += "<li data-code=\"" + key + "\" data-options=\"true\">" + $.htmlEncode(value) + "</li>";
+                    }
+                })
+                if (Object.keys(optionEngines).length > 1) {
+                    engineHtml += "<li class=\"divider\" style=\"height: 17px;border-top: 1px solid #EDEDED;\"></li>";
+                }
+            }
+            engineHtml += "<li onclick=\"window.location.href='/Login/Logout'\" class=\"logout\">注销</li>";
+            $("#optionengines ul").eq(0).append(engineHtml);
+        }
+        var GetToDoCount = function () {
+            var params = { PostData: JSON.stringify({ ActionName: "GetTodoCount" }) };
+            $.ajax({
+                type: "POST",
+                url: "/Navigation/OnAction",
+                data: params,
+                dataType: "json",
+                async: false,
+                success: function (data) {
+                    data = eval(data);
+                    if (data.ReturnData && data.ReturnData.Total > 0) {
+
+                        $("#task-num").html(data.ReturnData.Total);
+                    }
+                    if (data.ReturnData.TotalUnreadCount && data.ReturnData.TotalUnreadCount > 0) {
+                        $("#my-message-link").addClass("has-message-flag");
+                    }
+                },
+                error: function () {
+                },
+                complete: function () {
+                }
+            });
+        }
+        var GetHeaderMenusInfo = function () {
+            var params = { PostData: JSON.stringify({ ActionName: actionName, NodeCode: nodeCode }) };
+            $.ajax({
+                type: "POST",
+                url: "/Navigation/OnAction",
+                data: params,
+                dataType: "json",
+                async: false,
+                success: function (data) {
+                    data = eval(data);
+                    pageData = data.ReturnData;
+                    window._CurrentId = pageData.UserId;
+                    RenderAppList();
+                    RenderEngine();
+                    RenderNavbarRight();
+                    GetIsGuide();
+                    $('.sass-help').eq(0).click(function () {
+                        window.open(pageData.HelpService, '_blank');
+                    });
+                    GetToDoCount();
+                },
+                error: function () {
+                },
+                complete: function () {
+                }
+            });
+        }
+
+        // 迭代11 swork组新功能 更新引导，迭代13以后可删除
+        var GetIsGuide = function () {
+            $.ajax({
+                url: '/FormTaskTips/OnAction',
+                dataType: 'JSON',
+                type: 'POST',
+                data: { PostData: JSON.stringify({ ActionName: 'IsGuided' }) },
+                success: function (data) {
+                    if (data.ReturnData && !data.ReturnData.IsGuided) {
+                        // 迭代11 swork组新功能 更新引导，迭代13以后可删除
+                        $('.h3-navbar-right').find('#my-message-link').popover({
+                            trigger: 'manual',
+                            placement: 'bottom',
+                            content: '您的任务与消息提醒已移动至"我的消息"',
+                            template: '<div class="popover h3-new-feature-guide" role="popover" style="width:172px;height:109px;">'
+                                + '<div class="arrow"></div>'
+                                + '<div class="popover-content"></div>'
+                                + '<div class="feature-guide-footer"><div class="feature-guide__step">1/2</div><div class="feature-guide__btn" onClick="nextGuide(event)">下一步</div></div>'
+                                + '</div>'
+                        }).popover('show');
+                        $('.h3-navbar-right').find('[data-code="MyTask"] .title').popover({
+                            trigger: 'manual',
+                            placement: 'bottom',
+                            content: '"我的工作"调整为处理待办流程和查看已办流程',
+                            template: '<div class="popover h3-new-feature-guide" role="popover" style="width:188px;height:109px;">'
+                                + '<div class="arrow"></div>'
+                                + '<div class="popover-content"></div>'
+                                + '<div class="feature-guide-footer"><div class="feature-guide__step">2/2</div><div class="feature-guide__btn" onClick="finishGuide(event)">知道了</div></div>'
+                                + '</div>'
+                        });
+                    }
+                },
+                error: function (err) {
+
+                }
+            });
+        };
+        GetHeaderMenusInfo();
+
+        function GetQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if (r && r.length > 2) {
+                return unescape(r[2]);
+            }
+            return "";
+        }
+    })
+    function ToConsole() {
+        var key = 'tp_setting';
+        localStorage.setItem(key, true);
+        window.open("/pc/back-index.html", "back-index");
+    }
+    function nextGuide(e) {
+        e = e || window.event;
+        if (e.stopPropagation) {
+            e.stopPropagation();
+        } else {
+            e.cancelBubble = true;
+        }
+        $('.h3-navbar-right #my-message-link').popover('destroy');
+        $('.h3-navbar-right [data-code="MyTask"] .title').popover('show');
+        return false;
+    }
+    function finishGuide(e) {
+        e = e || window.event;
+        if (e.stopPropagation) {
+            e.stopPropagation();
+        } else {
+            e.cancelBubble = true;
+        }
+        if (e.preventDefault) {
+            e.preventDefault();
+        } else {
+            e.returnValue = false;
+        }
+        $('.h3-navbar-right [data-code="MyTask"] .title').popover('destroy');
+        $.ajax({
+            url: '/FormTaskTips/OnAction',
+            dataType: 'JSON',
+            type: 'POST',
+            data: { PostData: JSON.stringify({ ActionName: 'FinishUserGuide' }) },
+            success: function (data) {
+            },
+            error: function (err) {
+            }
+        });
+        return false;
+    }
+</script>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+
+    <section style="">
+        <div class="mainwrapper">
+<div class="leftpanel">
+    <ul class="nav nav-pills nav-stacked"></ul>
+    <div class="leftpanel-saassetting-icon settinghide">
+        <ul class="nav nav-pills nav-stacked saassetting-nav">
+            <li>
+                <div><span class="icon-setting"></span></div>
+                <div><span>应用设置</span></div>
+            </li>
+        </ul>
+    </div>
+    <div class="leftpanel-saassetting settinghide">
+        <ul class="nav nav-pills nav-stacked saassetting-nav">
+            <li>
+                <span class="icon-guanbi"></span>
+            </li>
+        </ul>
+        <ul class="nav nav-pills nav-stacked settingitem-container childrenHtmlSaaS" style="">
+            <li><span></span></li>
+        </ul>
+    </div>
+</div>
+<div id="Left-tool" title="" class="left-tool left-hide"><i class="left-icon"></i></div>
+
+<script src="/Scripts/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+
+        var actionName = "GetLeftMenusInfo";
+        var nodeCode = GetQueryString("id");
+
+        var RenderLeftHtml = function (data) {
+            var appChildren = data.ReturnData.AppChildren;
+            var childrenHtml = "";
+            var childrenHtmlSaaS = "";
+            var foundinSaas = false;
+            if (appChildren.valueOf(data.ReturnData.CurentModule) && appChildren[data.ReturnData.CurentModule].Children) {
+                for (var i = 0, len = appChildren[data.ReturnData.CurentModule].Children.length; i < len; i++) {
+                    var cTreeNode = appChildren[data.ReturnData.CurentModule].Children[i];
+                    if (cTreeNode.NodeType == data.ReturnData.GroupModule && (cTreeNode.Children == null || cTreeNode.Children.length == 0)) {
+                        continue;
+                    }
+                    if (cTreeNode.NodeType == data.ReturnData.GroupModule) {
+                        if (cTreeNode.IsAppSetting) {
+                            var nodeparenthtml = "";
+                            var nodechildhtml = "";
+                            nodechildhtml += "<ul class='leftchild'>";
+                            var nodeiffound = false;
+                            for (var j = 0, length = cTreeNode.Children.length; j < length; j++) {
+                                var q = cTreeNode.Children[j];
+                                if (!q.IsAppSetting) {
+                                    var isActive = "";
+                                    if (q.Code == data.ReturnData.NodeCode) {
+                                        isActive = "active";
+                                        childrenHtml += "<li class=\"" + isActive + "\"><a href=\"javascript:void(0)\"><i class=\"fa " + q.Icon + "\"></i> <span>" + $.htmlEncode(q.DisplayName) + "</span></a></li>";
+                                    }
+                                    else {
+                                        childrenHtml += "<li class=\"" + isActive + "\"><a href=\"" + q.Url + "\"><i class=\"fa " + q.Icon + "\"></i> <span>" + $.htmlEncode(q.DisplayName) + "</span></a></li>";
+                                    }
+                                    continue;
+                                }
+                                else {
+                                    var isActive = "";
+                                    if (data.ReturnData.NodeCode == q.Code) {
+                                        nodeiffound = true;
+                                        isActive = "active";
+                                        nodechildhtml += "<li class=\"leftchild " + isActive + "\"><a href=\"javascript:void(0)\"><i class=\"fa " + q.Icon + "\"></i> <span>" + $.htmlEncode(q.DisplayName) + "</span></a></li>";
+                                        foundinSaas = true;
+                                    }
+                                    else {
+                                        nodechildhtml += "<li class=\"leftchild " + isActive + "\"><a href=\"" + q.Url + "\"><i class=\"fa " + q.Icon + "\"></i> <span>" + $.htmlEncode(q.DisplayName) + "</span></a></li>";
+                                    }
+                                }
+                            }
+                            nodechildhtml += "</ul>";
+                            if (nodeiffound) {
+                                nodeparenthtml = "<li class=\"leftparent  leftopen\"><a href=\"javascript:void(0)\"  onclick='lefttreeclick(this);'><i class=\"fa fa-folder-open\"></i> <span>" + $.htmlEncode(cTreeNode.DisplayName) + "</span></a>";
+                            }
+                            else {
+                                nodeparenthtml = "<li class=\"leftparent\"  ><a href=\"javascript:void(0)\"  onclick='lefttreeclick(this);'><i class=\"fa fa-folder\"></i> <span>" + $.htmlEncode(cTreeNode.DisplayName) + "</span></a>";
+                            }
+                            nodeparenthtml += nodechildhtml;
+                            nodeparenthtml += "</li>";
+                            childrenHtmlSaaS += nodeparenthtml;
+                        }
+                        else {
+                            var nodeparenthtml = "";
+                            var nodechildhtml = "";
+                            nodechildhtml += "<ul class='leftchild'>";
+                            var nodeiffound = false;
+                            for (var j = 0, length = cTreeNode.Children.length; j < length; j++) {
+                                var q = cTreeNode.Children[j];
+                                if (q.IsAppSetting) {
+                                    if (q.Code == data.ReturnData.NodeCode) {
+                                        childrenHtmlSaaS += "<li class=\"active\"><a href=\"javascript:void(0)\"><i class=\"fa " + q.Icon + "\"></i> <span>" + $.htmlEncode(q.DisplayName) + "</span></a></li>";
+                                        foundinSaas = true;
+                                    }
+                                    else {
+                                        childrenHtmlSaaS += "<li class=\" \"><a href=\"" + q.Url + "\"><i class=\"fa " + q.Icon + "\"></i> <span>" + $.htmlEncode(q.DisplayName) + "</span></a></li>";
+                                    }
+                                    continue;
+                                }
+                                else {
+                                    if (data.ReturnData.NodeCode == q.Code) {
+                                        nodeiffound = true;
+                                        nodechildhtml += "<li class=\"leftchild active\"><a href=\"javascript:void(0)\"><i class=\"fa " + q.Icon + "\"></i> <span>" + $.htmlEncode(q.DisplayName) + "</span></a></li>";
+                                    }
+                                    else {
+                                        nodechildhtml += "<li class=\"leftchild  \"><a href=\"" + q.Url + "\"><i class=\"fa " + q.Icon + "\"></i> <span>" + $.htmlEncode(q.DisplayName) + "</span></a></li>";
+                                    }
+                                }
+                            }
+                            nodechildhtml += "</ul>";
+                            if (nodeiffound) {
+                                nodeparenthtml = "<li class=\"leftparent  leftopen\"><a href=\"javascript:void(0)\"  onclick='lefttreeclick(this);'><i class=\"fa fa-folder-open\"></i> <span>" + $.htmlEncode(cTreeNode.DisplayName) + "</span></a>";
+                            }
+                            else {
+                                nodeparenthtml = "<li class=\"leftparent\"  ><a href=\"javascript:void(0)\"  onclick='lefttreeclick(this);'><i class=\"fa fa-folder\"></i> <span>" + $.htmlEncode(cTreeNode.DisplayName) + "</span></a>";
+                            }
+                            nodeparenthtml += nodechildhtml;
+                            nodeparenthtml += "</li>";
+                            childrenHtml += nodeparenthtml;
+                        }
+
+                    }
+                    else {
+                        if (cTreeNode.IsAppSetting) {
+                            if (cTreeNode.Code == data.ReturnData.NodeCode) {
+                                foundinSaas = true;
+                                childrenHtmlSaaS += "<li class=\"active\"><a href=\"javascript:void(0)\"><i class=\"fa " + cTreeNode.Icon + "\"></i> <span>" + $.htmlEncode(cTreeNode.DisplayName) + "</span></a></li>";
+                            }
+                            else {
+                                childrenHtmlSaaS += "<li class=\" \"><a href=\"" + cTreeNode.Url + "\"><i class=\"fa " + cTreeNode.Icon + "\"></i> <span>" + $.htmlEncode(cTreeNode.DisplayName) + "</span></a></li>";
+                            }
+                        }
+                        else {
+                            if (cTreeNode.Code == data.ReturnData.NodeCode) {
+                                childrenHtml += "<li class=\"active\"><a href=\"javascript:void(0)\"><i class=\"fa " + cTreeNode.Icon + "\"></i> <span>" + $.htmlEncode(cTreeNode.DisplayName) + "</span></a></li>";
+                            }
+                            else {
+                                childrenHtml += "<li class=\" \"><a href=\"" + cTreeNode.Url + "\"><i class=\"fa " + cTreeNode.Icon + "\"></i> <span>" + $.htmlEncode(cTreeNode.DisplayName) + "</span></a></li>";
+                            }
+                        }
+
+                    }
+                }
+            }
+            $(".leftpanel .nav-pills.nav-stacked").eq(0).append(childrenHtml);
+            if (childrenHtmlSaaS) {
+                if (foundinSaas) {
+                    $(".leftpanel .leftpanel-saassetting-icon").addClass("settinghide");
+                    $(".leftpanel .leftpanel-saassetting").removeClass("settinghide");
+                }
+                else {
+                    $(".leftpanel .leftpanel-saassetting-icon").removeClass("settinghide");
+                    $(".leftpanel .leftpanel-saassetting").addClass("settinghide");
+                }
+                $(".childrenHtmlSaaS").append(childrenHtmlSaaS);
+            } else {
+                $(".leftpanel .leftpanel-saassetting-icon").addClass("settinghide");
+                $(".leftpanel .leftpanel-saassetting").addClass("settinghide");
+            }
+        }
+        var GetLeftMenusInfo = function () {
+            var params = { PostData: JSON.stringify({ ActionName: actionName, NodeCode: nodeCode }) };
+            $.ajax({
+                type: "POST",
+                url: "/Navigation/OnAction",
+                data: params,
+                dataType: "json",
+                async: false,
+                success: function (data) {
+                    data = eval(data);
+                    if (data && data.ReturnData && data.ReturnData.AppChildren && data.ReturnData.CurentModule) {
+                        RenderLeftHtml(data);
+                    }
+                },
+                error: function () {
+                },
+                complete: function () {
+                }
+            });
+        }
+        GetLeftMenusInfo();
+        function GetQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if (r && r.length > 2) {
+                return unescape(r[2]);
+            }
+            return "";
+        }
+    })
+</script>
+            <div class="mainpanel">
+                <div class="contentpanel">
+                    
+
+<div class="form-horizontal myform-horizontal" style="display:none">
+    <div class="form-group myform-group">
+        <div class="text-center" style="display:none" id="myMore">
+            <div class="btn-group" role="group">
+                <a href="javascript:void(0);" id="toggleSearch" style="color:#4a535e">
+                    <i class="icon-arrow-up-double-b" style="color:#e5e6e6;"></i>
+                </a>
+            </div>
+        </div>
+        <div class="pull-right" id="myMode" style="min-width:80px;display:none">
+            <select class="form-control selectmyform-control" id="toggleMode">
+                
+            </select>
+        </div>
+        <div class="pull-right" id="myfilter" style="min-width:80px;display:none">
+            <select class="form-control selectmyform-control" id="scopeType"></select>
+        </div>
+        <div class="pull-right" id="mychildschemacode" style="min-width:80px;display:none">
+            <select class="form-control selectmyform-control" style="" id="showchildschemacode">
+                <option value="">主表</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+<div id="ListView"></div>
+<div id="modal_loading">
+    <div class="loading-info">系统正在玩命儿执行您的旨意</div>
+    <div class="loading-time">已持续<span>0</span>秒</div>
+    <div class="loading-image"></div>
+</div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="/bundles/layoutjs?v=RNPorSWZSdyFxOvO08kKtaJ0tqKuCEtdJA_33ILAlzY1"></script>
+
+    <script src="/Scripts/plugins/growingIo/growingIo.js"></script>
+    <script>
+        $(function () {
+            var onlyContent = $.IQuery("onlyContent") === "1";
+            if (onlyContent) {
+                $("#Left-tool").hide();
+                $(".navbar").hide();
+                $(".leftpanel").hide();
+                $(".mainwrapper").css("padding-top", 0).css("top", 10);
+                $(".mainpanel").css("margin-left", "auto");
+                $(".contentpanel").css("margin-bottom", "auto");
+            }
+        });
+    </script>
+
+    
+    <script src="/bundles/AppIndexJs?v=tiv-5OEva9TrcunEZoyviWTs9QYrBIRKeyLZiChUJPc1"></script>
+
+    <script src="/Scripts/require.min.js"></script>
+    <script>
+
+        $.ajaxSetup({
+            complete: function (XMlHttpRequest, textStatus) {
+                console.log("AjasSetup ok!");
+                var res = XMlHttpRequest.responseJSON;
+                if (res &&!res.Successful ) {
+                    if (!res.Logined) {
+                        setTimeout(function () {
+                            window.location.href = "/Login/";
+                        },3000);
+                        return;
+                    };
+                    //ToDo 应该全局去处理这个页面的错误，但现在零散在各处，会导致双重错误提醒
+                    //else if (res.ErrorMessage) {
+                    //    $.IShowError({ title: "系统错误", msg: "", detail: res.ErrorMessage });
+                    //}
+                };
+            }
+        });
+        function getUrlParam(paramName) {
+            var ParamValue = "";
+            var reg = new RegExp("(^|&)" + paramName + "=([^&]*)(&|$)")
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) {
+                ParamValue = unescape(r[2]);
+            }
+            return ParamValue;
+        }
+
+        var version = "201812270001";
+
+    var constName = {
+        QueryCode: "",
+        ShowMode: "",
+        LoadViewName: "LoadView",
+        ResponseName: "Response",
+        CommandName: "Command",
+        QueryCodeName: "QueryCode",
+        resultName: "result",
+        SolutionStateName: "SolutionState",
+        EngineCodeName: "EngineCode",
+        TitleName: "Title",
+        DisplayModeName: "DisplayMode",
+        SchemaName: "Schema",
+        QueryDefaultValuesName: "QueryDefaultValues",
+        UnitSelectionRangesName: "UnitSelectionRanges",
+        ChildSchemaCodesName: "ChildSchemaCodes",
+        QueryItemsName: "QueryItems",
+        GetListScopeTypesName: "GetListScopeTypes",
+        VisibleCounterName: "visibleCounter",
+        EngineCode: ""
+    };
+    var mySchemaCode;
+    var ChildSchemaCodes = "";
+    var PropertyName_ObjectId = "ObjectId";
+    var OwnerDeptId_Name = "OwnerDeptId" + "_Name";
+    var QueryDefaultValues = {}, UnitSelectionRanges = {};
+    var QueryItems;
+    var AdressCache;
+    constName.QueryCode = mySchemaCode = getUrlParam('id');
+    constName.ShowMode = getUrlParam('mode');
+        constName.EngineCode = "o3and2j65xolcv0ipmhht2lf1";
+
+        $.SheetRuntimeContentCache.Init(constName.EngineCode);
+        var ListCacheItem = $.SheetRuntimeContentCache.Get(constName.QueryCode, "list");
+        var timeStamp = -1;
+        var javascript;
+        if (ListCacheItem && ListCacheItem[$.SheetRuntimeContentCache.ListJavaScriptName]) {
+            timeStamp = ListCacheItem[$.SheetRuntimeContentCache.TimeStampName] - 0;
+            javascript = ListCacheItem[$.SheetRuntimeContentCache.ListJavaScriptName];
+        }
+    if (constName.QueryCode != "") {
+        $.ajax({
+            type: "POST",
+            url: "/App/OnAction",
+            data: {
+                "PostData": JSON.stringify({ QueryCode: constName.QueryCode, ActionName: "LoadView", "TimeStamp": timeStamp})
+            },
+            dataType: "json",
+            success: function (ViewContext) {
+                if (!ViewContext.Successful) {
+                    $.IShowError({ title: "提示", msg: "出错了", detail: ViewContext.ErrorMessage });
+                    return false;
+                }
+
+                window.document.title = "氚云 - " + ViewContext.ReturnData.Title;
+                if (ViewContext.ReturnData.Response.Javascript) {
+                    javascript = ViewContext.ReturnData.Response.Javascript;
+                    $.SheetRuntimeContentCache.Set(constName.QueryCode, "", ViewContext.ReturnData.TimeStamp, ViewContext.ReturnData.Response.Javascript, "list", constName.EngineCode);
+                }
+                ViewContext.ReturnData.Response.Javascript = javascript;
+                //动态加载列表、日历jscss
+                try {
+                    QueryDefaultValues = JSON.parse(ViewContext.ReturnData.QueryDefaultValues);
+                } catch (e) { }
+                try {
+                    UnitSelectionRanges = JSON.parse(ViewContext.ReturnData.UnitSelectionRanges);
+                } catch (e) { }
+                LoadControlJSCSS(ViewContext, InitData, version);
+
+                AdressCache = ViewContext.ReturnData.AdressCache;
+                //OptionalDisplayModes
+                //可选模式
+                var optionalDisplayMode = [];
+                if (ViewContext.ReturnData.OptionalDisplayMode == null) {
+                    for (var key in $.ListView.ListViewDisplayMode) {
+                        optionalDisplayMode.push($.ListView.ListViewDisplayMode[key]);
+                    }
+                } else {
+                    optionalDisplayMode = ViewContext.ReturnData.OptionalDisplayMode;
+                }
+                var opt = "";
+                for (var i = 0; i < optionalDisplayMode.length; i++) {
+                    switch (optionalDisplayMode[i]) {
+                        case 0:
+                            opt += "<option value='0'>列表</option>";
+                            break;
+                        case 1:
+                            opt += "<option value='1'>日历</option>";
+                            break;
+                        case 2:
+                            opt += "<option value='2'>时间轴</option>";
+                            break;
+                        default:
+                    }
+                }
+                $("#toggleMode").append(opt);
+
+                var selectedMode = constName.ShowMode || ViewContext.ReturnData.DisplayMode;
+                $("#toggleMode").find("option[value='" + selectedMode + "']").attr("selected", true);
+
+                //GetListScopeTypes
+                if (ViewContext.ReturnData.GetListScopeTypes != null) {
+                    try {
+                        var scopeTypes = ViewContext.ReturnData.GetListScopeTypes;
+                        $("#myfilter").show();
+                        var scopeType = $("#scopeType");
+                        for (var i = 0; i < scopeTypes.length; i++) {
+                            var item = scopeTypes[i];
+                            var op = '<option value="' + item.Key + '">' + item.Value + '</option>';
+                            scopeType.append(op)
+                        }
+
+                    } catch (e) { }
+                }
+                //ChildSchemaCodes
+                if (ViewContext.ReturnData.ChildSchemaCodes != null) {
+                    try {
+                        var ChildSchemaCodes = JSON.parse(ViewContext.ReturnData.ChildSchemaCodes);
+                        var $showchildschemacode = $("#showchildschemacode");
+                        for (var c in ChildSchemaCodes) {
+                            var op = '<option value="' + c + '">' + ChildSchemaCodes[c] + '</option>';
+                            $showchildschemacode.append(op)
+                        }
+                        $showchildschemacode.val(ViewContext.ReturnData.DefaultDisplayChildCode);
+                        if (constName.ShowMode != ListViewDisplayMode.Calendar) {
+                            $("#mychildschemacode").show();
+                        }
+                    } catch (e) { }
+                }
+                //}
+            },
+            error: function (e) {
+                console.log(e)
+            }
+        })
+    }
+    </script>
+
+
+    <div id="gohome-trigger" style="opacity:0.8;border-radius:2px;"></div>
+
+    <script type="text/javascript">
+        $(function () {
+            window.OnlyContent = "";
+        });
+    </script>
+    <span id="ruler"></span>
+</body>
+</html>
