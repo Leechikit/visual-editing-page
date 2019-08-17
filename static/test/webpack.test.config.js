@@ -1,9 +1,8 @@
 'use strict'
 
 process.env.BABEL_ENV = 'renderer'
-
 const path = require('path')
-const { dependencies } = require('../package.json')
+const { dependencies } = require('./package.json')
 const webpack = require('webpack')
 
 const BabiliWebpackPlugin = require('babili-webpack-plugin')
@@ -144,12 +143,12 @@ let rendererConfig = {
   },
   resolve: {
     alias: {
-      '@': path.join(__dirname, '../src/renderer'),
+      '@': path.join(__dirname, '../static/test'),
       'vue$': 'vue/dist/vue.esm.js'
     },
     extensions: ['.js', '.vue', '.json', '.css', '.node']
   },
-  target: 'electron-renderer'
+  target: 'web'
 }
 
 /**
